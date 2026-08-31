@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Privacy Policy — Vesta</title>
+		<meta
+			name="description"
+			content="How Vesta, a private household assistant, handles Google Calendar data: what is accessed, why, where it is stored, and how to revoke it."
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="page">
+			<nav class="running-head">
+				<a href="index.html">Vesta</a>
+				<span>Privacy</span>
+				<a href="terms.html">Terms</a>
+			</nav>
+
+			<header class="titleblock">
+				<h1>Privacy<br />Policy</h1>
+				<div class="rule"></div>
+				<p>What Vesta touches, why she touches it, and how to take it back.</p>
+			</header>
+
+			<div class="prose">
+				<p class="lead">
+					Vesta is a private household assistant used by three named people. She is not offered to the
+					public, has no users beyond that household, and collects nothing from anyone who reads this page.
+					This policy describes what happens to the Google account data of the people who choose to connect
+					their calendars to her.
+				</p>
+
+				<h2>What is accessed</h2>
+
+				<p>
+					Vesta requests a single Google OAuth scope:
+					<code>https://www.googleapis.com/auth/calendar</code>. It allows her to list the calendars on a
+					connected account, read the events on them, check free and busy periods, create and change events,
+					and respond to invitations.
+				</p>
+
+				<p>
+					She requests no other scope. She does not access Gmail, Drive, Contacts, Photos, location history,
+					or any other Google service.
+				</p>
+
+				<h2>Why it is accessed</h2>
+
+				<p>
+					Solely to answer the household's own questions and carry out its own requests — what is on today,
+					when two people are both free, moving an appointment, accepting an invitation. Calendar data is
+					read at the moment a question is asked and used to compose the reply.
+				</p>
+
+				<div class="aside">
+					Google user data is never used for advertising, never sold, never shared with third parties, and
+					never used to train any machine learning or AI model.
+				</div>
+
+				<h2>Where it is kept</h2>
+
+				<p>
+					On one personal computer in the household. There is no server, no hosted backend, and no external
+					database. Calendar contents are held in memory only for as long as it takes to answer a question,
+					and are not written to disk.
+				</p>
+
+				<p>
+					The one thing stored persistently is the OAuth access and refresh token for each connected account,
+					kept in a single file on that computer with owner-only file permissions. Anyone with physical or
+					administrative access to that machine could read that file, which is the same trust boundary as the
+					calendars being open in a browser on it.
+				</p>
+
+				<p>
+					Vesta also keeps a short plain-text notes file of things the household has explicitly asked her to
+					remember. It lives on the same machine, and the household can read, edit, or delete it at any time.
+				</p>
+
+				<h2>What is not collected</h2>
+
+				<ul class="list">
+					<li>No analytics, telemetry, cookies, or tracking of any kind, on this website or in the assistant.</li>
+					<li>No data from anyone outside the household.</li>
+					<li>No advertising identifiers, and no profiles built for advertising purposes.</li>
+					<li>No transfer of Google user data to any third party.</li>
+				</ul>
+
+				<h2>Language models</h2>
+
+				<p>
+					Vesta composes her replies using a large language model provided by Anthropic. To answer a question
+					about the calendar, the relevant calendar details are included in the request sent to that model,
+					under the account holder's own paid subscription. That request is subject to Anthropic's privacy
+					terms. No other processor receives Google user data, and no Google user data is used to train any
+					model.
+				</p>
+
+				<h2>Limited use</h2>
+
+				<p>
+					Vesta's use of information received from Google APIs adheres to the
+					<a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener"
+						>Google API Services User Data Policy</a
+					>, including the Limited Use requirements.
+				</p>
+
+				<h2>Retention and removal</h2>
+
+				<p>
+					Access can be withdrawn at any moment from
+					<a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>,
+					which immediately invalidates the stored tokens. Deleting the local token file removes them from the
+					machine. Once revoked or deleted, Vesta can read nothing further, and nothing about the account
+					remains — there is no copy anywhere else to delete.
+				</p>
+
+				<h2>Changes</h2>
+
+				<p>
+					If this policy changes, the revised version replaces this page and the date below is updated. Given
+					the size of the audience, notice will be given in person.
+				</p>
+
+				<h2>Contact</h2>
+
+				<p>
+					Alessandra Pereyra —
+					<a href="mailto:alessapereyra@gmail.com">alessapereyra@gmail.com</a>
+				</p>
+
+				<div class="colophon">
+					<p class="dateline">Effective 30 August 2026 · Lima, Peru</p>
+					<p><a href="index.html">Home</a> · <a href="terms.html">Terms of service</a></p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

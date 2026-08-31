@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Vesta — a household assistant</title>
+		<meta
+			name="description"
+			content="Vesta is a private household assistant that reads a family's Google Calendars and answers scheduling questions in a small Slack workspace."
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="page">
+			<nav class="running-head">
+				<span>Vesta</span>
+				<a href="privacy.html">Privacy</a>
+				<a href="terms.html">Terms</a>
+			</nav>
+
+			<header class="titleblock">
+				<h1>Vesta</h1>
+				<div class="rule"></div>
+				<p>A household assistant for one family, their home, and the person who helps them run it.</p>
+			</header>
+
+			<div class="prose">
+				<p class="lead">
+					Vesta keeps track of a single household. She reads the family's calendars, answers questions
+					about who is free and when, remembers what she has been told, and replies in a private Slack
+					workspace shared by three people. She is named for the hearth — the fire kept alive so the
+					house stays warm, tended so that nobody else has to think about it.
+				</p>
+
+				<p>
+					She is not a product and is not for sale. There is no sign-up, no account to create, and no
+					version of this that runs for anyone else. She exists because a household wanted one, and she
+					runs on a computer in that household.
+				</p>
+
+				<h2>What she does</h2>
+
+				<ul class="list">
+					<li>Reads the family's Google Calendars and reports what is on them.</li>
+					<li>Finds open time across several calendars at once, so a plan can be made in one question.</li>
+					<li>Creates and updates events when asked, and answers invitations.</li>
+					<li>Keeps short written notes of things she has been told, in a plain text file the family can read and edit.</li>
+					<li>Answers in the language she is spoken to, in a Slack workspace with three members.</li>
+				</ul>
+
+				<h2>Where she runs</h2>
+
+				<p>
+					On one personal computer. There is no server, no hosted service, and no database anywhere else.
+					Calendar data is fetched when a question is asked and used to write the answer. Access tokens are
+					stored in a single file on that machine, readable only by its owner.
+				</p>
+
+				<div class="aside">
+					Nothing about this household is sent to an analytics service, an advertiser, or any third party.
+					There is nobody to send it to.
+				</div>
+
+				<h2>Who uses her</h2>
+
+				<p>
+					Three named people: the two members of the household and one person hired to help at home.
+					No one else can reach her, and no one else's data passes through her.
+				</p>
+
+				<h2>Google account access</h2>
+
+				<p>
+					Vesta requests one Google scope, <code>https://www.googleapis.com/auth/calendar</code>, so she can
+					read and manage the calendars belonging to the accounts that authorised her. The
+					<a href="privacy.html">privacy policy</a> sets out exactly what is accessed, what it is used for,
+					where it is kept, and how to revoke it. Use of information received from Google APIs adheres to the
+					<a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener"
+						>Google API Services User Data Policy</a
+					>, including the Limited Use requirements.
+				</p>
+
+				<div class="colophon">
+					<p class="dateline">Lima, Peru</p>
+					<p>
+						Enquiries: <a href="mailto:alessapereyra@gmail.com">alessapereyra@gmail.com</a>
+					</p>
+					<p>
+						<a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a>
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
